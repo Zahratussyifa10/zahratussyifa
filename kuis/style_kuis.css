@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+    color: #0b0e0fa9;
+    background-color: #ebfaf5;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 8px;
+}
+
+td {
+    background-color: white;
+}
+
+th {
+    background-color: rgb(158, 211, 193);
+}
