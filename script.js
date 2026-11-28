@@ -1,4 +1,4 @@
-// Indikator bahwa file JB berhasil dimuat
+// Indikator bahwa file JS berhasil dimuat
 console.log("JavaScript Poliban DigiCraft Studio siap digunakan");
 
 /* A. LOGIKA UNTUK HALAMAN PRODUK (produk.html) */
@@ -23,7 +23,7 @@ function hitungEstimasi() {
 
     // Validasi pemilihan paket dasar
     if (!paketSelect.value) {
-        alert("Peringatan: Silahkan pilih salah satu paket layanan terlebih dahulu!") ;
+        alert("Peringatan: Silahkan pilih salah satu paket layanan terlebih dahulu!");
         return;
     }
 
@@ -38,14 +38,14 @@ function hitungEstimasi() {
 
 /* B. LOGIKA UNTUK HALAMAN KONTAK (kontak.html) - DYNAMIC FORM INPUT */
 
-// HItungan indeks untuk penomoran field dinamis
+// Hitungan indeks untuk penomoran field dinamis
 let jumlahLink = 1;
 
 // Fungsi Menambah Input Link Referensi Baru
 function tambahanInputLink() {
     jumlahLink++;
 
-    // 1. ambil elemn wadah penampung 
+    // 1. ambil elemen wadah penampung 
     let container = document.getElementById("wadah-referensi");
 
     // 2. Buat elemen baris wrapper baru (<div>)
@@ -56,7 +56,7 @@ function tambahanInputLink() {
     // 3. Masukkan templete HTML unutk inputan baru beserta tombol hapus
     divBaru.innerHTML = `
     <input type="url" name="referensi_link[]" placeholder="https://contoh-website-acuan-${jumlahLink}.com" class="input-dynamic">
-    <button type="button" class="btn-hapus" onclick=hapusInputlink('${divBaru.id})')">Hapus</button>
+    <button type="button" class="btn-hapus" onclick="hapusInputLink('${divBaru.id}')">Hapus</button> 
     `;
 
     // 4. Sisipkan element baru ke dalam container DOM 
